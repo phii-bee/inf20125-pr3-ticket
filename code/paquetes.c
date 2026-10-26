@@ -15,7 +15,7 @@ int main(void)
         return 1;
     }
 
-    paquetes_pendientes = paquetes_iniciales - paquetes_recibidos - paquetes_despachados;
+    paquetes_pendientes = paquetes_iniciales + paquetes_recibidos - paquetes_despachados;
 
     printf("Paquetes pendientes: %d\n", paquetes_pendientes);
     return 0;
